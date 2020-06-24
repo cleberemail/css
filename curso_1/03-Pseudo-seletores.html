@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            a {
+                color: grey;
+            }
+            a:hover {
+                color: red;
+            }
+            a:active {
+                color: greenyellow;
+            }
+            a:focus {
+                color: hotpink;
+            }
+            input:focus {
+                color: hotpink;
+            }
+            div:focus-within {
+                background-color:lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo-seletores</h1>
+        <header>
+            <div>
+                <div>                
+                    <a class="logomarca" id="textLogomarca">logomarca</a>                    
+                </div>
+                <input type="text">
+            </div>
+        </header>
+        <main>
+            <section>
+                <h1 class="logomarca">conteudo</h1>
+                <p>Um texto qualquer</p>
+            </section>
+        </main>
+        <footer id="footer">
+            <section>
+                <div class="logomarca">© todos os direitos reservados</div>
+            </section>
+        </footer>
+
+    </body>
+</html>
