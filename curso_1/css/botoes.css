@@ -1,0 +1,36 @@
+
+.btn {
+    text-decoration: none;               
+    padding:5px 20px;
+    border:1px solid #555;
+    border-radius:5px;
+    background:#EEEEEE;
+    color:#888888;
+}
+
+.btn.btn-red {
+    background-color: #E74C3C;
+    color:#FFFFFF;
+}
+
+.btn-red:hover {
+    background-color: #C0392B;
+}
+
+.btn.btn-blue {
+    background-color: #3498db;
+    color:#FFFFFF;
+}
+
+.btn-blue:hover {
+    background-color: #2980b9;
+}
+
+.btn.btn-green {
+    background-color: #1abc9c;
+    color:#FFFFFF;
+}
+
+.btn-green:hover {
+    background-color: #16a085;
+}
