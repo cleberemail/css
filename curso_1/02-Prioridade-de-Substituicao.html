@@ -1,0 +1,52 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+            id      - prioriade 1
+            classe  - prioriade 2
+            tag     - prioriade 3
+        */
+        
+        header {
+            color:blue;
+        }
+
+        .logomarca {
+            color:red;
+        }
+
+        #textLogomarca {
+            color:green;
+        }
+
+        header div div a#textLogomarca {
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prioridade de Substituição</h1>
+    <header>
+        <div>
+            <div>                
+                <a href="" class="logomarca" id="textLogomarca">logomarca</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 class="logomarca">conteudo</h1>
+            <p>Um texto qualquer</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <section>
+            <div class="logomarca">© todos os direitos reservados</div>
+        </section>
+    </footer>
+
+</body></html>
