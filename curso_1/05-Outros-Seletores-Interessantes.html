@@ -1,0 +1,111 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* Seletores */
+
+        * {
+            border:1px solid red;
+        }
+
+        header + main { /*vai receber sempre que aparecer depois do header*/
+            border:5px solid blue;
+        }
+
+        header ~ main { /*vai receber todas as vezes que aparecer depois do header*/
+            border:5px solid blue;
+        }
+        
+        a[title] { /* totos os links que tiverem title */
+            color:red;
+        }
+
+        a[title="cleber"] { /* totos os links que tiverem title */
+            color:darkorchid;
+        }
+
+        a[class*="btn"] {
+            text-decoration: none;               
+            padding:5px 20px;
+            border-radius:5px;
+            background:#EEEEEE;
+            color:#888888;
+        }
+
+        .btn-red {
+            background-color: #E74C3C !important;
+            color:#FFFFFF !important;
+        }
+
+        .btn-red:hover {
+            background-color: #C0392B !important;
+        }
+        
+        .btn-blue {
+            background-color: #3498db !important;
+            color:#FFFFFF !important;
+        }
+
+        .btn-blue:hover {
+            background-color: #2980b9 !important;
+        }
+        
+        .btn-green {
+            background-color: #1abc9c !important;
+            color:#FFFFFF !important;
+        }
+
+        .btn-green:hover {
+            background-color: #16a085 !important;
+        }
+
+        .btnqualquer-pink {
+            background-color: darkmagenta !important;
+            color:#FFFFFF !important;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="" class="btn-red">Link</a>
+    <a href="" class="btn-blue">Link</a>
+    <a href="" class="btn-green">Link</a>
+    <a href="" class="btnqualquer-pink">Link</a>
+    <h1>Seletores e Relacionamento de Seletores</h1>
+    <main>
+        <section>
+            <h1>conteudo</h1>
+            <p>Um texto qualquer</p>
+        </section>
+    </main>
+    <header>
+        <div>
+            <div>                
+                <a href="" class="logomarca" title="cleber">logomarca</a>
+                <a href="" class="logomarca">logomarca</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>conteudo</h1>
+            <p>Um texto qualquer</p>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h1>conteudo</h1>
+            <p>Um texto qualquer</p>
+            <a href="" class="logomarca" title="logomarca">logomarca</a>
+        </section>
+    </main>
+    <footer id="footer">
+        <section>
+            <div class="logomarca">© todos os direitos reservados</div>
+        </section>
+        <p class="logomarca">© todos os direitos reservados</p>        
+    </footer>
+
+</body></html>
