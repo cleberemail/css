@@ -6,6 +6,12 @@
     border-radius:5px;
     background:#EEEEEE;
     color:#888888;
+    border:none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: all .5s ease;
 }
 
 .btn.btn-red {
